@@ -1,0 +1,12 @@
+export const soundslikeS = async (word) => {
+  const res = await fetch(`https://api.datamuse.com/words?sl=${word}`);
+  return res.json();
+}
+export const spelledsimilarlyS = async (word) => {
+  const res = await fetch(`https://api.datamuse.com/words?sp=${word}`);
+  return res.json();
+}
+export const rhymeS = async (word) => {
+  const res = await fetch(`https://api.datamuse.com/words?rel_rhy=${word}`);
+  return res.json();
+}
